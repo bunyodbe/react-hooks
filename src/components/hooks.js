@@ -7,6 +7,8 @@ const Hooks = () => {
   const [number, setNumber] = useState(0);
   const [dark, setDark] = useState(false);
 
+  /*----------------------- useState -----------------------*/
+
   const onIncrementHandler = () => {
     setNumber((prevState) => prevState + 1);
   };
@@ -39,11 +41,15 @@ const Hooks = () => {
     [number]
   );
 
+  /*----------------------- useCallBack -----------------------*/
+
   /*----------------------- useMemo -----------------------*/
 
   // const items = useMemo(() => {
   //   return (num) => new Array(num).fill("").map((_, index) => index + 1);
   // }, [number]);
+
+  /*----------------------- useMemo -----------------------*/
 
   return (
     <div className="w-50 shadow rounded p-5 mx-auto mt-5" style={theme}>
